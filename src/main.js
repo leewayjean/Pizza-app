@@ -11,19 +11,21 @@ import axios from "axios"
 
 axios.defaults.baseURL = "https://wd1080820118dsbrnx.wilddogio.com/"
 
-
+//将axios挂载到Vue中
 Vue.prototype.axios = axios
 
 
 
-
+//配置产生信息
 Vue.config.productionTip = false
 
+
+//使用路由插件
 Vue.use(VueRouter)
 
 
 
-
+//实例化路由
 const router = new VueRouter({
 	routes:Routes,
 	mode:"history"
@@ -51,6 +53,9 @@ const router = new VueRouter({
 // })
 
 /* eslint-disable no-new */
+
+
+//实例化Vue
 new Vue({
   el: '#app',
   components: { App },
